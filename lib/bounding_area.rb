@@ -1,7 +1,7 @@
 require_relative "bounding_box"
 
 class BoundingArea
-  def initialize(box_1, box_2 = nil, box_3 = nil, box_4 = nil, box_5 = nil)
+  def initialize(box_1 = 0, box_2 = 0, box_3 = 0, box_4 = 0, box_5 = 0)
     @box_1 = box_1
     @box_2 = box_2
     @box_3 = box_3
