@@ -1,4 +1,18 @@
+require_relative "bounding_box"
+
 class BoundingArea
+  def initialize(box_1, box_2 = nil, box_3 = nil, box_4 = nil, box_5 = nil)
+    @box_1 = box_1
+    @box_2 = box_2
+    @box_3 = box_3
+    @box_4 = box_4
+    @box_5 = box_5
+  end
+
+  def contains_point?(x, y)
+
+  end
+
 end
 
 
