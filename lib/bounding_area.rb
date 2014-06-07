@@ -13,15 +13,19 @@ class BoundingArea
     @rez
   end
 
-  # def contains_point?(x, y)
-  #   if empty?
-  #     @res = false
-  #   else
-  #     @res = nil
-  #     @array_of_boxes.each do |box|
-  #       if box.contains_point?(x,y)
-
-  # end
+  def contains_point?(x, y)
+    if empty?
+      @res = false
+    else
+      @res = false
+      @array_of_boxes.each do |box|
+        if box.contains_point?(x,y)
+          @res = true
+        end
+      end
+    end
+    @res
+  end
 
 end
 
